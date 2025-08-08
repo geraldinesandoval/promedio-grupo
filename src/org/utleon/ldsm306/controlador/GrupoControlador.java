@@ -12,7 +12,6 @@ public class GrupoControlador {
     public void iniciar() {
         Scanner scanner = new Scanner(System.in);
 
-        try {
             System.out.print("Ingrese el número de filas del grupo: ");
             filas = scanner.nextInt();
             scanner.nextLine();
@@ -53,10 +52,6 @@ public class GrupoControlador {
             mostrarPromedioGrupalEdad();
             mostrarFilaMasDestacada();
             mostrarAlumnoMasDestacado();
-
-        } catch (InputMismatchException e) {
-            System.out.println("\n⚠️ Error: Entrada no válida. Debes ingresar datos numéricos correctos.");
-        }
     }
 
     private void mostrarPromediosPorFila() {
