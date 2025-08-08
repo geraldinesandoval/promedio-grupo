@@ -5,14 +5,14 @@ public class Alumno {
     private String nombre;
     private int edad;
     private String carrera;
-    private int cuatrimestre;
+    private int cuatri;
     private double promedio;
 
     public Alumno(String nombre, int edad, String carrera, int cuatrimestre, double promedio) {
         this.nombre = nombre;
         this.edad = edad;
         this.carrera = carrera;
-        this.cuatrimestre = cuatrimestre;
+        this.cuatri = cuatrimestre;
         this.promedio = promedio;
         
         
@@ -31,7 +31,7 @@ public class Alumno {
     }
 
     public int getCuatrimestre() {
-        return cuatrimestre;
+        return cuatri;
     }
 
     public double getPromedio() {
